@@ -51,7 +51,7 @@ namespace Lab_2._3
             Console.WriteLine("Please enter a valid phone number: ");
             string number = Console.ReadLine();
 
-            Regex reg = new Regex(@"\(?\d{3}\)?[.,-]\d{3}[.,-]\d{4}");
+            Regex reg = new Regex(@"\(?\d{3}\)?[.,-]\d{3}[.,-]\d{4}$");
 
             bool matched3 = reg.IsMatch(number);
 
